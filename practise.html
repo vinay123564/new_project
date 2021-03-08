@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form {
+            color: rgb(5, 58, 5);
+        }
+
+        .main.test h1 {
+            color: red;
+        }
+
+        .main>h1 {
+            color: rgb(17, 0, 255);
+        }
+
+        .main+p {
+            color: green;
+        }
+
+        .mian~p {
+            color: rgb(128, 0, 43);
+        }
+        .mian ~ p:hover{
+            color:blue; 
+        }
+       a:hover{
+           color:yellow;
+       }
+       a:active{
+           color:red;
+       }
+       a:visited{
+           color:green;
+       }
+       .green ~ p::first-line{
+        color:red;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 90px;
+       }
+       .green ~ p::before{
+           content:"super";
+       }
+       .green ~ p::after{
+           content:"*";
+       }
+       .red{
+           visibility: visible;
+           font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+       }
+       .blue{
+           display:inline;
+           font-family: Arial, Helvetica, sans-serif;
+       }
+        .green{
+         position: relative;
+              top: -274px;
+       } 
+       .yellow{
+           width:400px;
+           background-color:yellow;
+           position:relative;
+       }
+       .ash img{
+           position:absolute;
+           top:0px;
+           left:200px;
+       }
+       .ash h1{
+           position:absolute;
+           top:0px;
+           left:250px;
+       }
+    </style>
+</head>
+
+<body>
+    <form method="GET" action="1.php">
+        <label for="">First Name* </label>
+        <input type="text" name="firstname" placeholder="enter your first name">
+        <label for="">Last name*</label>
+        <input type="text" name="lastname" placeholder="enter your last name">
+        <br /><br />
+        <label for="">Email*</label>
+        <input type="emai" name="email" placeholder="enter emailid">
+        <br /><br />
+        <label for="">Password*</label>
+        <input type="password" name="password" placeholder="enter your password">
+        <label for="">confirm password*</label>
+        <input type="password" name="password" placeholder="again enter your password">
+        <br /><br />
+        <label for="">Gender:</label> <br />
+        <label for="male">
+            <input type="radio" name="gender" id="male" value="male">male
+        </label>
+        <label for="female">
+            <input type="radio" name="gender" id="female" value="female">female
+        </label> <br /><br />
+        <label for="">Hobbies:</label><br />
+        <label for="music">
+            <input type="radio" name="hobbies" value="music" id="music">Music
+        </label>
+        <label for="sport">
+            <input type="radio" name="hobbies" value="sport" id="sport">Sport
+        </label>
+        <label for="travel">
+            <input type="radio" name="hobbies" value="travel" id="travel">Travel
+        </label>
+        <label for="movies">
+            <input type="radio" name="hobbies" value="movies" id="movies">Movies
+        </label>
+
+        <br /><br />
+        <select for="">
+            <option value="Emoloyed">Employed</option>
+            <option value="unEmoloyed">UnEmployed</option>
+            <option value="selfEmoloyed">selfEmployed</option>
+        </select>
+        <label for="">Income</label>
+        <input type="range" name="income">
+        <br /><br />
+        <label for="">Upload Profile Picture</label>
+        <input type="file" name="image">
+        <label for="">Age </label>
+        <input type="number" name="age">
+        <br /><br />
+        <label for="">Bio</label><br />
+        <textarea cols="50" rows="20"></textarea>
+        <input type="submit">
+    </form>
+    <hr />
+    <div>Iam hero</div>
+    <img src="1.jpeg" alt="123" />
+    <hr />
+
+    <div class="main test">
+        <h1>these is main</h1>
+        <h1>these is main</h1>
+
+    </div>
+
+    <div class="main">
+        <h1>these is main1</h1>
+        <h1>these is main2</h1>
+        <div class="main1">
+            <h1>thes is main1</h1>
+
+        </div>
+    </div>
+    <p>hi sir</p>
+    <p>hi sir</p>
+    <div class="mian">
+        <div class="ma">
+            <div class="ra">
+
+            </div>
+        </div>
+    </div>
+    <p>hi sir</p>
+    <p>hi sir</p>
+
+
+</body>
+
+</html>
+
+
+> child <div class="red">
+    <h1>nlue</h1>
+</div>
++ sibling <div class="green">
+    <div class="blue">
+    </div>
+</div>
+<h1>nlue</h1>
+~ general sibling <div class="green">
+    <div class="blue">
+    </div>
+</div>
+<h1>nlue</h1>
+<h1>nlue</h1>
+
+<a href="https://us04web.zoom.us/postattendee?id=4">ffsdfd</a></br>
+<a href="g">this</a>
+<p>Top Tutorials
+    HTML Tutorial
+    CSS Tutorial
+    JavaScript Tutorial
+    How To Tutorial
+    SQL Tutorial
+    Python Tutorial
+    W3.CSS Tutorial
+    Bootstrap Tutorial
+    PHP Tutorial
+    jQuery Tutorial
+    Java Tutorial
+    C++ Tutorial
+    Top References
+    HTML Reference
+    CSS Reference
+    JavaScript Reference
+    SQL Reference
+    Python Reference
+    W3.CSS Reference
+    Bootstrap Reference
+    PHP Reference
+    HTML Colors
+    jQuery Reference
+    Java Reference
+    Angular Reference
+    Top Examples
+    HTML Examples
+    CSS Examples
+    JavaScript Examples
+    How To Examples
+    SQL Examples
+    Python Examples
+    W3.CSS Examples
+    Bootstrap Examples
+    PHP Examples
+    jQuery Examples
+    Java Examples
+    XML Examples
+    Web Certificates
+    HTML Certificate
+    CSS Certificate
+    JavaScript Certificate
+    SQL Certificate
+    Python Certificate
+    jQuery Certificate
+    PHP Certificate
+    Bootstrap Certificate
+    XML Certificate
+    </p>
+    <h1 class="red"> SQL Certificate</h1>
+    <h2  class="blue">  Bootstrap Certificate</h2><span>fdjfksd</span>fdlskjfdsh
+    <h4 class="green">hi friends</h4>
+    <div class="yellow">
+    <div class="ash">
+        <img src="https://www.filmibeat.com/img/popcorn/profile_photos/vijay-20190924101414-662.jpg">
+        <h1>red</h1>
+
+    </div>
+    </div>
+    
